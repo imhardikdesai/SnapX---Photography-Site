@@ -6,11 +6,9 @@
 }
 
 .menu-logo {
-
     img {
         height: 53px;
     }
-
 }
 
 .menu-links {
@@ -23,7 +21,7 @@
         color: #fff;
         font-size: 0.8rem;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
@@ -57,4 +55,4 @@
     &__img {
         fill: $primary-color;
     }
-}   
+}
