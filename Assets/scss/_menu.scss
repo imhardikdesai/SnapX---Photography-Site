@@ -1,10 +1,60 @@
-.menu{
+.menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 75px;
 }
 
-.menu-logo{
+.menu-logo {
 
-    img{
-        height: 80px;
+    img {
+        height: 53px;
     }
+
 }
+
+.menu-links {
+    background-color: $primary-color;
+    display: flex;
+
+    li {
+        list-style-type: none;
+        margin: 21px;
+        color: #fff;
+        font-size: 0.8rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.menu-btn {
+    button {
+        display: flex;
+        align-items: center;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 3px 19px;
+        font-size: 12px;
+        color: $primary-color;
+        font-weight: 700;
+
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            cursor: pointer;
+
+            .menu-btn__img {
+                fill: #fff;
+            }
+
+        }
+    }
+
+    &__img {
+        fill: $primary-color;
+    }
+}   
