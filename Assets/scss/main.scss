@@ -1,7 +1,26 @@
-@import "config";
+@import "variables";
 @import "menu";
 @import "hero";
+@import "slider";
+@import "categories";
+@import "contest";
+@import "pricing";
+@import "footer";
+@import "responsive";
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+// p {
+//   line-height: 1.2;
+// }
+
+.set-img {
+  height: 160px;
+}
+
+#ham{
+  height: 43px !important;
+  display: none;
 }

@@ -1,71 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SnapX</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Roboto font Link  -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-        rel="stylesheet">
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="./Assets/css/main.min.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./Assets/css/main.min.css" />
+  </head>
+
+  <body>
     <!-- Navbar Stared  -->
     <header>
-        <nav class="menu">
-            <div class="menu-logo">
-                <img src="./Assets/img/menu-logo-svg.svg" alt="logo">
-            </div>
-            <div class="menu-links">
-                <li>HOME</li>
-                <li>PHOTOS & VIDEOS</li>
-                <li>CATEGORIES</li>
-                <li>USERS</li>
-            </div>
-            <div class="menu-btn">
-                <button>
-                    <svg class="menu-btn__img" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0V0z" />
-                        <path
-                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" />
-                    </svg>
-                    Sign in/Up
-                </button>
-            </div>
-        </nav>
+      <nav class="menu">
+        <div class="menu-logo d-flex justify-content-between align-items-center">
+          <img src="./Assets/img/menu-logo-svg.svg" alt="logo" />
+          <img id="ham" src="./Assets/img/hamburger.svg" alt="logo" />
+        </div>
+
+
+        <div id="links" class="menu-links">
+          <li>HOME</li>
+          <li>PHOTOS & VIDEOS</li>
+          <li>CATEGORIES</li>
+          <li>USERS</li>
+        </div>
+        <div class="menu-btn">
+          <button>
+            <svg
+              class="menu-btn__img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path fill="none" d="M0 0h24v24H0V0z" />
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            Sign in/Up
+          </button>
+
+        <div class="phone-menu-links">
+          <li>HOME</li>
+          <li>PHOTOS & VIDEOS</li>
+          <li>CATEGORIES</li>
+          <li>USERS</li>
+          <div class="phone-menu-btn">
+            <button>
+              <svg
+                class="phone-menu-btn__img"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+              Sign in/Up
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Carousel -->
 
     <section class="hero">
-        <div class="hero-text">
-            Enter a World of <span> Photos </span> & Amazing <br /> <span> Awards</span>
+      <div class="hero-text">
+        Enter a World of <span> Photos </span> & Amazing <br />
+        <span> Awards</span>
+      </div>
+      <div class="hero-sub-text">
+        SnapX Photography is a professional website template with 5 different
+        HTML pages for maximum customizations. It is free for commercial usage.
+        This Bootstrap v5.1.3 CSS layout is provided by TemplateMo Free CSS
+        Templates.
+      </div>
+      <div class="hero-btn">
+        <button>Explore SnapX Contest</button>
+        <div class="hero-btn__text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"
+            />
+          </svg>
+          Watch Our Video Now
         </div>
-        <div class="hero-sub-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ut tempore fugiat reiciendis officia
-            consequuntur tempora placeat rem recusandae nostrum quo voluptatum numquam ipsam laboriosam, temporibus
-            nisi
-        </div>
-        <div class="hero-btn">
-            <button>Explore SnapX Contest</button>
-            <div class="hero-btn__text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z" />
-                </svg>
+      </div>
 
-                Watch Our Video Now
+      <!-- UNSPLASH API https://source.unsplash.com/1280x700/?nature -->
+      <section class="slider-section">
+        <div class="container d-flex align-items-center">
+          <svg
+            class="action"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,0A12,12,0,1,0,24,12,12.01,12.01,0,0,0,12,0Zm2.64,16.232a1,1,0,1,1-1.28,1.536l-6-5a1,1,0,0,1,0-1.536l6-5a1,1,0,1,1,1.28,1.536L9.562,12Z"
+              data-name="16. Previous"
+            />
+          </svg>
+
+          <div class="row">
+            <div class="slider-1 slider-box card col p-0 border-0 mx-3">
+              <img
+                src="./Assets/img/nature-1.jpeg"
+                class="card-img-top"
+                alt="img"
+              />
+              <div class="card-body d-none">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
-</body>
 
+            <div class="slider-2 slider-box card col p-0 border-0 mx-3">
+              <img
+                src="./Assets/img/nature-2.jpeg"
+                class="card-img-top"
+                alt="img"
+              />
+              <div class="card-body d-none">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+
+            <div class="slider-3 slider-box card col p-0 border-0 mx-3">
+              <img
+                src="./Assets/img/nature-3.jpeg"
+                class="card-img-top"
+                alt="img"
+              />
+              <div class="card-body d-none">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <svg
+            class="action"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0a12 12 0 1 0 12 12A12.01 12.01 0 0 0 12 0Zm4.641 12.768-6 5a1 1 0 1 1-1.282-1.536L14.437 12 9.359 7.768a1 1 0 1 1 1.282-1.536l6 5a1 1 0 0 1 0 1.536Z"
+              data-name="19. Next"
+            />
+          </svg>
+        </div>
+      </section>
+    </section>
+
+    <!-- categories section  -->
+    <section class="categories">
+      <div class="categories-header">
+        <div class="categories-header__text">
+          <p>OUR CATEGORIES</p>
+          <h4>
+            Check Out <span> Popular </span>Contest <span> Categories </span>
+          </h4>
+        </div>
+        <div class="categories-btn">
+          <button>Discover All Categories</button>
+        </div>
+      </div>
+
+      <!-- categories Gallery -->
+      <div class="categories-gallery">
+        <div class="cat-box">
+          <div class="box-head m-2 d-flex justify-content-between">
+            <img src="./Assets/img/image.svg" alt="img" />
+            <div class="box-head__text">
+              <h5>Nature Pic Contest</h5>
+              <div class="text-muted"><span>126</span> Available Contest</div>
+            </div>
+          </div>
+
+          <div class="box-img m-2">
+            <img src="./Assets/img/nature-4.jpeg" alt="box" />
+          </div>
+          <div class="box-footer">
+            <button>Browse Nature Pic Contests</button>
+          </div>
+        </div>
+
+        <div class="cat-box">
+          <div class="box-head m-2 d-flex justify-content-between">
+            <img src="./Assets/img/tripod-light.svg" alt="img" />
+            <div class="box-head__text">
+              <h5>Random Pic Contest</h5>
+              <div class="text-muted"><span>116</span> Available Contest</div>
+            </div>
+          </div>
+          <div class="box-img m-2">
+            <img src="./Assets/img/nature-5.jpeg" alt="box" />
+          </div>
+          <div class="box-footer">
+            <button>Browse Random Pic Contests</button>
+          </div>
+        </div>
+
+        <div class="cat-box">
+          <div class="box-head m-2 d-flex justify-content-between">
+            <img src="./Assets/img/gallery.svg" alt="img" />
+            <div class="box-head__text">
+              <h5>Portrait Pic Contest</h5>
+              <div class="text-muted"><span>164</span> Available Contest</div>
+            </div>
+          </div>
+          <div class="box-img m-2">
+            <img src="./Assets/img/nature-6.jpeg" alt="box" />
+          </div>
+          <div class="box-footer">
+            <button>Browse Portrait Pic Contests</button>
+          </div>
+        </div>
+
+        <div class="cat-box">
+          <div class="box-head m-2 d-flex justify-content-between">
+            <img src="./Assets/img/photo-shoot-lighting.svg" alt="img" />
+            <div class="box-head__text">
+              <h5>Space Pic Contest</h5>
+              <div class="text-muted"><span>135</span> Available Contest</div>
+            </div>
+          </div>
+          <div class="box-img m-2">
+            <img src="./Assets/img/nature-7.jpeg" alt="box" />
+          </div>
+          <div class="box-footer">
+            <button>Browse Space Pic Contests</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contest">
+      <div class="contest-head">
+        <h6>CLOSED PHOTOGRAPHY CONTESTS</h6>
+        <h4>Previous Contests <span> With Handpicked </span>Winners</h4>
+      </div>
+
+      <div class="contest-gallery">
+        <div class="contest-gallery__box">
+          <img class="set-img" src="./Assets/img/nature-7.jpeg" alt="img" />
+          <div class="p-4 d-flex justify-content-between">
+            <div>
+              <h6 class="fw-10">96 Participants</h6>
+              <small class="text-muted">Number of Artist</small>
+            </div>
+            <div>
+              <h6 class="fw-10">410 Picture</h6>
+              <small class="text-muted">Submitted Pics</small>
+            </div>
+          </div>
+        </div>
+        <div class="contest-gallery__box">
+          <img class="set-img" src="./Assets/img/nature-5.jpeg" alt="img" />
+          <div class="p-4 d-flex justify-content-between">
+            <div>
+              <h6 class="fw-10">74 Participants</h6>
+              <small class="text-muted">Number of Artist</small>
+            </div>
+            <div>
+              <h6 class="fw-10">284 Picture</h6>
+              <small class="text-muted">Submitted Pics</small>
+            </div>
+          </div>
+        </div>
+        <div class="contest-gallery__box">
+          <img class="set-img" src="./Assets/img/nature-6.jpeg" alt="img" />
+          <div class="p-4 d-flex justify-content-between">
+            <div>
+              <h6 class="fw-10">68 Participants</h6>
+              <small class="text-muted">Number of Artist</small>
+            </div>
+            <div>
+              <h6 class="fw-10">320 Picture</h6>
+              <small class="text-muted">Submitted Pics</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contest-btn">
+        <button>Browse Open Contest</button>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="pricing-head">
+        <h6>OUR PRICING</h6>
+        <h4>
+          Photography <span> Contest Plans</span> And Price<span> Awards</span>
+        </h4>
+      </div>
+
+      <div class="pricing-slider">
+        <div class="pricing-box">
+          <img class="set-img" src="./Assets/img/illustration.png" alt="img" />
+          <h5 class="fw-8">Basic Plan</h5>
+
+          <div class="pricing-box__bottom">
+            <p>Lorem ipsum dolor sit</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p><del class="text-muted"> Lorem, ipsum dolor.</del></p>
+            <p><del class="text-muted"> Lorem ipsum dolor sit.</del></p>
+          </div>
+          <div class="pricing-box__price">
+            <h3>$25 USD</h3>
+          </div>
+          <div class="pricing-box__btn">
+            <button>Choose This Plan</button>
+          </div>
+        </div>
+
+        <div class="pricing-box">
+          <img class="set-img" src="./Assets/img/illustration.png" alt="img" />
+          <h5 class="fw-8">Standard Plan</h5>
+
+          <div class="pricing-box__bottom">
+            <p>Lorem ipsum dolor sit</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit</p>
+            <p><del class="text-muted"> Digital Photography Awards</del></p>
+          </div>
+          <div class="pricing-box__price">
+            <h3>$45 USD</h3>
+          </div>
+          <div class="pricing-box__btn">
+            <button>Choose This Plan</button>
+          </div>
+        </div>
+
+        <div class="pricing-box">
+          <img class="set-img" src="./Assets/img/illustration.png" alt="img" />
+          <h5 class="fw-8">Advanced Plan</h5>
+
+          <div class="pricing-box__bottom">
+            <p>Lorem ipsum dolor sit</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="pricing-box__price">
+            <h3>$85 USD</h3>
+          </div>
+          <div class="pricing-box__btn">
+            <button>Choose This Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Copyright &copy; 2023 <span>SnapX</span> Photo Contest Co. Ltd All rights
+      reserved Design <span>TemplateMo</span>
+    </footer>
+  </body>
+  <!-- Bootstrap JS  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./Assets/js/app.js"></script>
 </html>

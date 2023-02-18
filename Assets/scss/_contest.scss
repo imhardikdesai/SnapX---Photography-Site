@@ -1,0 +1,49 @@
+.contest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $light-bg;
+  padding: 10px;
+  padding-bottom: 60px;
+
+  &-head {
+    padding-top: 60px;
+    color: $primary-color;
+    margin-bottom: 20px;
+
+    span {
+      color: #000;
+    }
+  }
+
+  &-gallery {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &__box {
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 10px;
+      img{
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+  }
+
+  &-btn {
+    margin-top: 20px;
+    button {
+      @include btn-style($primary-color, #fff);
+
+      &:hover {
+        @include btn-style(#fff, $primary-color);
+        @include transition-ease;
+      }
+    }
+  }
+}

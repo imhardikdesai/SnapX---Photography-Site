@@ -1,0 +1,29 @@
+.slider-section {
+  position: absolute;
+  top: 66vh;
+  // top: 39rem;
+}
+
+.slider-box {
+  border-radius: 1rem;
+  img {
+    border-radius: 1rem;
+
+    &:hover {
+      opacity: 0.8;
+      @include transition-ease;
+    }
+  }
+}
+
+.action {
+  fill: $primary-color;
+  height: 140px;
+  margin: 0px 9px;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    @include transition-ease;
+  }
+}

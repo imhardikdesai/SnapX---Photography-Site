@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: #00bfff;
+$light-bg: #f2fbff;
+$secondary-color: #e2e2e2;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin btn-style($text, $bg) {
+  border: 2px solid $text;
+  border-radius: 10px;
+  color: $text;
+  background-color: $bg;
+  padding: 8px 36px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  // background-color: transparent;
+}

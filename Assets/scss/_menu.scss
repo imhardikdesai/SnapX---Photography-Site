@@ -1,58 +1,109 @@
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 75px;
 }
 
 .menu-logo {
-    img {
-        height: 53px;
-    }
+  img {
+    height: 53px;
+  }
 }
 
 .menu-links {
-    background-color: $primary-color;
-    display: flex;
+  background-color: $primary-color;
+  display: flex;
 
-    li {
-        list-style-type: none;
-        margin: 21px;
-        color: #fff;
-        font-size: 0.8rem;
+  li {
+    list-style-type: none;
+    margin: 21px;
+    color: #fff;
+    font-size: 0.8rem;
 
-        &:hover {
-            cursor: pointer;
-        }
+    &:hover {
+      cursor: pointer;
     }
-
+  }
 }
 
 .menu-btn {
+  button {
+    display: flex;
+    align-items: center;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    color: $primary-color;
+    background-color: #fff;
+    padding: 3px 19px;
+    font-size: 13px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      cursor: pointer;
+      @include transition-ease;
+      .menu-btn__img {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__img {
+    fill: $primary-color;
+  }
+}
+
+.phone-menu-links {
+  display: none !important;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  z-index: 1;
+  right: 0;
+  width: 100%;
+  height: 35%;
+  top: 0px;
+
+  li {
+    list-style-type: none;
+    margin: 21px;
+    color: #fff;
+    font-size: 0.8rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .phone-menu-btn {
     button {
-        display: flex;
-        align-items: center;
-        border: 2px solid $primary-color;
-        border-radius: 10px;
-        background-color: #fff;
-        padding: 3px 19px;
-        font-size: 12px;
-        color: $primary-color;
-        font-weight: 700;
+      display: flex;
+      align-items: center;
+      border: 2px solid $primary-color;
+      border-radius: 10px;
+      color: $primary-color;
+      background-color: #fff;
+      padding: 3px 19px;
+      font-size: 13px;
+      font-weight: 600;
 
-        &:hover {
-            background-color: $primary-color;
-            color: #fff;
-            cursor: pointer;
-
-            .menu-btn__img {
-                fill: #fff;
-            }
-
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+        cursor: pointer;
+        @include transition-ease;
+        .menu-btn__img {
+          fill: #fff;
         }
+      }
     }
 
     &__img {
-        fill: $primary-color;
+      fill: $primary-color;
     }
+  }
 }

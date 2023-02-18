@@ -1,0 +1,50 @@
+.pricing {
+  text-align: center;
+  margin: 50px 0px;
+
+  &-head {
+    color: $primary-color;
+    span {
+      color: #000;
+    }
+  }
+}
+
+.pricing-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pricing-box {
+  border: 2px solid rgba(185, 185, 185, 0.3);
+  padding: 20px 82px;
+  margin: 10px;
+  border-radius: 13px;
+
+  h5 {
+    border-bottom: 2px solid $secondary-color;
+    padding: 15px 0px;
+  }
+
+  &__bottom {
+    p {
+      font-size: 0.8rem;
+      color: $primary-color;
+    }
+  }
+  &__price {
+    color: $primary-color;
+  }
+
+  &__btn {
+    button {
+      @include btn-style($primary-color, #fff);
+
+      &:hover {
+        @include btn-style(#fff, $primary-color);
+        @include transition-ease;
+      }
+    }
+  }
+}
